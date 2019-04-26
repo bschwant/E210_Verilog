@@ -1,0 +1,375 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Feb 15 12:35:52 2019
+# Process ID: 2414
+# Current directory: /nfs/nfs7/home/bschwant/Desktop/project_4/project_4.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /nfs/nfs7/home/bschwant/Desktop/project_4/project_4.runs/synth_1/top.vds
+# Journal file: /nfs/nfs7/home/bschwant/Desktop/project_4/project_4.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2451 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1401.574 ; gain = 86.613 ; free physical = 7719 ; free virtual = 27675
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'toggler' [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/sources_1/new/toggler.v:23]
+	Parameter ST_Idle bound to: 0 - type: integer 
+	Parameter ST_Ping bound to: 1 - type: integer 
+	Parameter ST_Pong bound to: 2 - type: integer 
+	Parameter STATE_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'reloading_timer' [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/sources_1/new/reloading_timer.v:23]
+	Parameter ST_IDLE bound to: 0 - type: integer 
+	Parameter ST_REL bound to: 1 - type: integer 
+	Parameter STATE_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'timer' [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/sources_1/new/timer.v:23]
+	Parameter ST_IDLE bound to: 0 - type: integer 
+	Parameter ST_DOWN bound to: 1 - type: integer 
+	Parameter STATE_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/sources_1/new/timer.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (1#1) [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/sources_1/new/timer.v:23]
+INFO: [Synth 8-226] default block is never used [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/sources_1/new/reloading_timer.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'reloading_timer' (2#1) [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/sources_1/new/reloading_timer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/sources_1/new/toggler.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'toggler' (3#1) [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/sources_1/new/toggler.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (4#1) [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3917] design top has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[13] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[12] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[1] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1446.215 ; gain = 131.254 ; free physical = 7730 ; free virtual = 27686
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1446.215 ; gain = 131.254 ; free physical = 7730 ; free virtual = 27686
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1446.215 ; gain = 131.254 ; free physical = 7730 ; free virtual = 27686
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1788.066 ; gain = 0.000 ; free physical = 7467 ; free virtual = 27423
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7551 ; free virtual = 27507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7551 ; free virtual = 27507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7552 ; free virtual = 27509
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'toggler'
+INFO: [Synth 8-5544] ROM "toggle" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_Idle |                               00 |                               00
+                 ST_Ping |                               01 |                               01
+                 ST_Pong |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'toggler'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7544 ; free virtual = 27500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 2     
++---Registers : 
+	               25 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 2     
++---Registers : 
+	               25 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+Module reloading_timer 
+Detailed RTL Component Info : 
++---Registers : 
+	               25 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module toggler 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design top has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[13] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[12] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[1] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'tog0/rel_tim0/savedValue_reg[8]' (FDRE) to 'tog0/rel_tim0/savedValue_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tog0/rel_tim0/savedValue_reg[7]' (FDRE) to 'tog0/rel_tim0/savedValue_reg[6]'
+INFO: [Synth 8-3886] merging instance 'tog0/rel_tim0/savedValue_reg[6]' (FDRE) to 'tog0/rel_tim0/savedValue_reg[5]'
+INFO: [Synth 8-3886] merging instance 'tog0/rel_tim0/savedValue_reg[5]' (FDRE) to 'tog0/rel_tim0/savedValue_reg[4]'
+INFO: [Synth 8-3886] merging instance 'tog0/rel_tim0/savedValue_reg[4]' (FDRE) to 'tog0/rel_tim0/savedValue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'tog0/rel_tim0/savedValue_reg[3]' (FDRE) to 'tog0/rel_tim0/savedValue_reg[2]'
+INFO: [Synth 8-3886] merging instance 'tog0/rel_tim0/savedValue_reg[2]' (FDRE) to 'tog0/rel_tim0/savedValue_reg[1]'
+INFO: [Synth 8-3886] merging instance 'tog0/rel_tim0/savedValue_reg[1]' (FDRE) to 'tog0/rel_tim0/savedValue_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tog0/rel_tim0/savedValue_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (tog0/rel_tim0/savedValue_reg[0]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7531 ; free virtual = 27488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:45 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7406 ; free virtual = 27371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:46 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7396 ; free virtual = 27361
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:46 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7395 ; free virtual = 27360
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7396 ; free virtual = 27360
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7396 ; free virtual = 27360
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7396 ; free virtual = 27360
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7396 ; free virtual = 27360
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7396 ; free virtual = 27360
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7396 ; free virtual = 27360
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    10|
+|3     |LUT1   |    24|
+|4     |LUT2   |    13|
+|5     |LUT3   |     3|
+|6     |LUT4   |    18|
+|7     |LUT5   |    64|
+|8     |LUT6   |    16|
+|9     |FDRE   |    45|
+|10    |IBUF   |    20|
+|11    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+----------------+------+
+|      |Instance     |Module          |Cells |
++------+-------------+----------------+------+
+|1     |top          |                |   230|
+|2     |  tog0       |toggler         |   193|
+|3     |    rel_tim0 |reloading_timer |   188|
+|4     |      tim0   |timer           |   154|
++------+-------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7396 ; free virtual = 27360
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1788.066 ; gain = 131.254 ; free physical = 7447 ; free virtual = 27412
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1788.066 ; gain = 473.105 ; free physical = 7458 ; free virtual = 27423
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 1796.078 ; gain = 493.949 ; free physical = 7454 ; free virtual = 27418
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/nfs/nfs7/home/bschwant/Desktop/project_4/project_4.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1820.098 ; gain = 0.000 ; free physical = 7454 ; free virtual = 27419
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 15 12:36:50 2019...

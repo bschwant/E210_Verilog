@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:07:38
+/nfs/nfs7/home/bschwant/project_2/project_2.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+/nfs/nfs7/home/bschwant/project_2/project_2.srcs/sim_1/new/decoder_tb.sv,1547837790,systemVerilog,,,,decoder_tb,,,,,,,,
+/nfs/nfs7/home/bschwant/project_2/project_2.srcs/sim_1/new/top_tb.sv,1547837275,systemVerilog,,,,top_tb,,,,,,,,
+/nfs/nfs7/home/bschwant/project_2/project_2.srcs/sources_1/new/decoder.v,1547834861,systemVerilog,,/nfs/nfs7/home/bschwant/project_2/project_2.srcs/sim_1/new/decoder_tb.sv,,decoder,,,,,,,,
+/nfs/nfs7/home/bschwant/project_2/project_2.srcs/sources_1/new/top.v,1547835092,systemVerilog,,/nfs/nfs7/home/bschwant/project_2/project_2.srcs/sim_1/new/top_tb.sv,,top,,,,,,,,

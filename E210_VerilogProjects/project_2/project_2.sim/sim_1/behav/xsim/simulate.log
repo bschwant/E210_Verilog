@@ -1,0 +1,21 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+xxxxxxxx
+00000000
+10000000
+00000000
+01000000
+00000000
+00100000
+00000000
+00010000
+00000000
+00001000
+00000000
+00000100
+00000000
+00000010
+00000000
+00000001
+@@@Passed
+$finish called at time : 160 ns : File "/nfs/nfs7/home/bschwant/project_2/project_2.srcs/sim_1/new/top_tb.sv" Line 97

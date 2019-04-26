@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri Mar 29 12:09:10 2019
+| Host         : redbelly.sice.indiana.edu running 64-bit Red Hat Enterprise Linux Workstation release 7.6 (Maipo)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35ti
+-------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    42 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      4 |            3 |
+|      8 |            3 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              32 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              46 |            7 |
+| Yes          | No                    | No                     |              40 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             120 |           21 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+--------------------------------+-----------------------------+------------------+----------------+
+|            Clock Signal            |          Enable Signal         |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++------------------------------------+--------------------------------+-----------------------------+------------------+----------------+
+|  sevseg0/slowClk                   |                                |                             |                1 |              2 |
+|  uart0/tx0/uart_tx_out_reg_i_2_n_0 |                                |                             |                1 |              2 |
+|  uart0/rx0/load_reg[1]_i_2_n_0     |                                |                             |                1 |              4 |
+|  uart0/tx0/nextState               |                                |                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG               |                                |                             |                1 |              4 |
+|  sevseg0/slowClk                   |                                | sevseg0/slowRst             |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG               | uart0/rx0/load_reg[1]_i_2_n_0  | btnC_IBUF                   |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG               | uart0/tx0/nextState            | btnC_IBUF                   |                2 |              8 |
+|  uart0/rx0/E[0]                    |                                |                             |                3 |             16 |
+|  CLK100MHZ_IBUF_BUFG               | uart0/rx0/shift_in             | btnC_IBUF                   |                2 |             16 |
+|  CLK100MHZ_IBUF_BUFG               | uart0/rx0/count[13]_i_1_n_0    |                             |                3 |             20 |
+|  CLK100MHZ_IBUF_BUFG               | uart0/tx0/count[13]_i_1__0_n_0 |                             |                3 |             20 |
+|  CLK100MHZ_IBUF_BUFG               |                                | btnC_IBUF                   |                6 |             38 |
+|  CLK100MHZ_IBUF_BUFG               | uart0/rx0/count[13]_i_1_n_0    | uart0/rx0/count[31]_i_1_n_0 |                8 |             44 |
+|  CLK100MHZ_IBUF_BUFG               | uart0/tx0/count[13]_i_1__0_n_0 | uart0/tx0/count[31]_i_1_n_0 |                7 |             44 |
++------------------------------------+--------------------------------+-----------------------------+------------------+----------------+
+
+
